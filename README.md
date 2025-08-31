@@ -18,8 +18,9 @@ This repo contains a minimal, production-ready example of deploying an unprivile
 
 ## Quickstart
 
-```shell
+
 # 1) Create project
+```shell
 % oc apply -f 00-namespace.yaml
 namespace/red-hat-test created
 % oc get project red-hat-test
