@@ -13,7 +13,7 @@ This repo contains a minimal, production-ready example of deploying an unprivile
 - **NetworkPolicies** with default deny + specific allows (routers)
 - **Security**: non-root, no privilege escalation, read-only root filesystem, dropped capabilities, RuntimeDefault seccomp
 
-> Tested with OpenShift 4.x. The image `nginxinc/nginx-unprivileged:1.27-alpine` runs as non-root and listens on 8080.
+> Tested with OpenShift Local 4.19.3. The image `nginxinc/nginx-unprivileged:1.27-alpine` runs as non-root and listens on 8080.
 ---
 
 ## Quickstart
@@ -223,4 +223,20 @@ root@curl:/# curl -v -k http://nginx.red-hat-test.svc.cluster.local
 curl: (28) Failed to connect to nginx.red-hat-test.svc.cluster.local port 80 after 130067 ms: Couldn't connect to server
 ```
 
+# Managed OpenShift at a Glance
 
+### ARO (Azure Red Hat OpenShift)
+- Fully managed OpenShift jointly operated by **Microsoft + Red Hat** in **Azure**.
+- **99.95% SLA** for highly available clusters.
+- Native Azure integrations (networking, billing in Azure, Entra ID, etc.).  
+
+
+### ROSA (Red Hat OpenShift Service on AWS)
+- Managed OpenShift jointly operated by **AWS + Red Hat** in **AWS**.
+- **99.95% uptime SLA**, 24×7 Red Hat SRE-backed operations.
+- AWS-native integrations (IAM/STS, VPC, etc.) and **single AWS bill**.  
+
+
+> TL;DR: ARO = managed OpenShift on Azure; ROSA = managed OpenShift on AWS. Both offload control plane + infra ops and carry enterprise SLAs.
+
+---
