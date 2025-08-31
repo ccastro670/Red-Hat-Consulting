@@ -237,6 +237,5 @@ curl: (28) Failed to connect to nginx.red-hat-test.svc.cluster.local port 80 aft
 - AWS-native integrations (IAM/STS, VPC, etc.) and **single AWS bill**.  
 
 
-> TL;DR: ARO = managed OpenShift on Azure; ROSA = managed OpenShift on AWS. Both offload control plane + infra ops and carry enterprise SLAs.
-
+> ARO = managed OpenShift on Azure; ROSA = managed OpenShift on AWS. Both offload control plane + infra ops and carry enterprise SLAs.
 ---
