@@ -223,7 +223,7 @@ root@curl:/# curl -v -k http://nginx.red-hat-test.svc.cluster.local
 curl: (28) Failed to connect to nginx.red-hat-test.svc.cluster.local port 80 after 130067 ms: Couldn't connect to server
 ```
 
-# Managed OpenShift at a Glance
+# Fully-managed OpenShift Cluster
 
 ### ARO (Azure Red Hat OpenShift)
 - Fully managed OpenShift jointly operated by **Microsoft + Red Hat** in **Azure**.
